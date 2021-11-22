@@ -5,11 +5,10 @@ from PyQt5 import uic
 from PyQt5.QtGui import QPainter, QColor, QBrush
 from PyQt5.QtWidgets import QApplication, \
     QMainWindow, QTableWidgetItem
-from untitled import Ui_MainWindow
 import sqlite3
 
 
-class Window(QMainWindow, Ui_MainWindow):
+class Window(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("untitled.ui", self)
